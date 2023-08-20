@@ -1,0 +1,126 @@
+<html lang="en">
+    <head>
+        <title>Yummy !</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="css/images/logo.png">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <section class="position-fixed w-20 h-100" id="bar">
+            <div class="container mt-4 barContent d-flex flex-column justify-content-between px-2 h-100">
+                <ul class="list-unstyled overflow-hidden h-50">
+                    <li class="ps-4"><a href="#" class="text-decoration-none text-white" id="barSearch">Search</a></li> <!-- py-3 --> 
+                    <li class="ps-4"><a href="#" class="text-decoration-none text-white" id="barCate">Categories</a></li>
+                    <li class="ps-4"><a href="#" class="text-decoration-none text-white" id="barArea">Area</a></li>
+                    <li class="ps-4"><a href="#" class="text-decoration-none text-white" id="barIngred">Ingredients</a></li>
+                    <li class="ps-4"><a href="#" class="text-decoration-none text-white" id="barContact">Contact Us</a></li>
+                </ul>
+                <div class="barLeftFooter pe-5 ps-3 me-3 mb-5">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter mx-3"></i>
+                    <i class="fas fa-globe"></i>
+                    <p class="text-muted mt-2">Copyright© Mo.Magdy 2019 All Rights Reserved.</p>
+                </div>
+            </div>
+            <div class="barControl bg-white w-20 h-100 position-absolute top-0 end-0 d-flex flex-column justify-content-between text-center px-1 py-4">
+                <div class="barRightImg container px-1"><img src="css/images/logo.png" alt="" class="img-fluid w-100"></div>
+                <div class="barRighticon1"><i class="fa fa-align-justify fa-times fa-2x" id="closeBar"></i><i class="fa fa-align-justify fa-2x" id="openBar"></i></div>
+                <div class="barRighticon2"><i class="fas fa-globe d-block"></i><i class="fas fa-share-alt d-block mt-2"></i></div>
+            </div>
+
+        </section>
+
+        <section id="loading">
+            <div class="d-flex align-items-center h-100">
+                <div class="sk-cube-grid">
+                    <div class="sk-cube sk-cube1"></div>
+                    <div class="sk-cube sk-cube2"></div>
+                    <div class="sk-cube sk-cube3"></div>
+                    <div class="sk-cube sk-cube4"></div>
+                    <div class="sk-cube sk-cube5"></div>
+                    <div class="sk-cube sk-cube6"></div>
+                    <div class="sk-cube sk-cube7"></div>
+                    <div class="sk-cube sk-cube8"></div>
+                    <div class="sk-cube sk-cube9"></div>
+                </div>
+            </div>
+        </section>
+        <section class="container py-5 w-75" id="meals">
+            <div class="row pt-5"> 
+            </div>
+        </section>
+        <section class="container py-5 w-75" id="mealDetails">
+            <div class="row pt-5">
+                <div class="col-md-4">
+                    <img src="https://www.themealdb.com/images/media/meals/58oia61564916529.jpg" alt="" class="img-fluid w-100" id="itemDetailsImg">
+                    <p class="text-white text-center mt-2 fs-1" id="itemDetailsText">Corba</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="container text-white">
+                        <h3 class="fs-2">Instructions</h3>
+                        <p id="instructions"></p>
+                        <h6 class="fw-bold">Area : <span class="fw-light" id="area"></span></h6>
+                        <h6 class="fw-bold">Category : <span class="fw-light" id="category"></span></h6>
+                        <h3 class="fs-2">Recipes :</h3>
+                        <ul class="d-flex flex-wrap list-unstyled recip" id="recipes">
+                        </ul>
+                        <h3 class="fs-2">Tags :</h3>
+                        <ul class="d-flex flex-wrap list-unstyled tag" id="tags">
+                        </ul>
+                        <a class="btn btn-success" id="source" target="_blank">Source</a>
+                        <a class="btn btn-danger ms-2" id="youtube" target="_blank">Youtube</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container py-5 w-75" id="searchMeals">
+            <div class="search d-flex justify-content-evenly">
+                <input type="text" class="form-control w-40 d-inline-block bg-transparent border-0 rounded-0 border-bottom text-start text-muted" placeholder="Search By Name" id="searchByName">
+                <input type="text" class="form-control w-40 d-inline-block bg-transparent border-0 rounded-0 border-bottom text-start text-muted" placeholder="Search By First Letter..." id="searchByFLetter">
+            </div>
+            <div class="row pt-5"> 
+            </div>
+        </section>
+        <section class="container py-5 w-75 vh-100" id="contactUs">
+            <div class="container my-5 d-flex justify-content-center">
+                <div class="myFrom w-75 text-center">
+                    <h2 class="text-white text-center my-5">Contact Us...</h2>
+                    <div class="row gy-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control bg-transparent rounded-0 border-top-0 border-start-0 border-end-0 text-start text-muted" placeholder="Enter Your Name" id="cName">
+                            <p class="alert alert-danger mt-1">Special Characters and Numbers not allowed</p>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control bg-transparent rounded-0 border-top-0 border-start-0 border-end-0 text-start text-muted" placeholder="Enter Email" id="cEmail">
+                            <p class="alert alert-danger mt-1">Enter valid email. *Ex: xxx@yyy.zzz</p>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control bg-transparent rounded-0 border-top-0 border-start-0 border-end-0 text-start text-muted" placeholder="Enter Phone" id="cPhone">
+                            <p class="alert alert-danger mt-1">Enter valid Phone Number</p>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control bg-transparent rounded-0 border-top-0 border-start-0 border-end-0 text-start text-muted" placeholder="Enter Age" id="cAge">
+                            <p class="alert alert-danger mt-1">Enter valid Age</p>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" class="form-control bg-transparent rounded-0 border-top-0 border-start-0 border-end-0 text-start text-muted" placeholder="Enter Password" id="cPass">
+                            <p class="alert alert-danger mt-1">Enter valid password *Minimum eight characters, at least one letter and one number:*</p>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" class="form-control bg-transparent rounded-0 border-top-0 border-start-0 border-end-0 text-start text-muted" placeholder="Enter RePassword" id="cRePass">
+                            <p class="alert alert-danger mt-1">Enter valid Repassword</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-danger bg-transparent text-danger my-4" id="cSubmit" disabled>Submit</button>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="js/jquery-3.6.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
